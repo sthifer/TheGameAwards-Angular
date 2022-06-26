@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RequestGamesService } from 'src/app/services/request-games.service';
 
 @Component({
   selector: 'app-games-management',
@@ -8,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class GamesManagementComponent implements OnInit {
 
-  constructor() { }
+  constructor(private requestGames:RequestGamesService) { }
 
   ngOnInit(): void {
+    
+    
   }
 
 }
