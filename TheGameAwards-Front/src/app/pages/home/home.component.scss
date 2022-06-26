@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Rajdhani:wght@500&family=Russo+One&display=swap');
+
 section{
+    background: url('../../../assets/images/city.jpg');
+    height: 90vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
     text-align: center;
 }
 
 .welcome{
+    margin-top: 30px;
+    font-family: 'Russo One';
     font-size: 40px;
     font-smooth: auto;
     text-shadow: 0 1px 0#000000,
@@ -25,6 +30,7 @@ section{
     color: #fe00ae
 }
 .award{
+    font-family: 'Russo One';
     font-size: 60px;
     font-smooth: auto;
     text-shadow: 0 1px 0#000000,
