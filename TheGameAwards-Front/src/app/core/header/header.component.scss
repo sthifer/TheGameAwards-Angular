@@ -1,0 +1,89 @@
+
+header{
+
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../../assets/img/header-background.webp");
+    color: #EC68B5;
+
+    .neonText{
+        font-family: 'Monoton';
+        color: #EC68B5;
+        text-shadow:
+        0 0 1px #fff,
+        0 0 42px #EC68B5,
+        0 0 40px #EC68B5,;
+    }
+
+
+    .headercontent{
+
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{ 
+            font-size: 3rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+       
+
+        &__menu{
+            width: 30vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a{
+                color: #EC68B5;
+                font-weight: bolder;
+                font-size: 1.2rem;
+                transition: all 0.3s;
+
+                &:hover{
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #EC68B5;
+                }
+            }
+            
+        }
+
+        img{
+            width: 6%;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &__input{
+            font-family: FontAwesome;
+            width: 300px;
+            background: none;
+            border: 0;
+            padding-bottom: 5px;
+            // border-bottom: 2px solid #EC68B5;
+            font-weight: normal;
+            overflow: visible;
+            vertical-align: top;
+            display: inline-block !important;
+            padding-left: 5px;
+            padding-top: 2px;
+            color: hsl(9, 40%, 60%);
+            transition: 0.3s all;
+
+            &:hover, &:focus{
+                border-bottom: 2px solid #EC68B5;
+            }
+        }
+
+    }
+   
+}
