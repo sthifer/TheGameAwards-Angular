@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+     list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+body{
+    font-family: 'Russo One', cursive;
+    
+    background-image:url("./assets/images/city.jpg");
+    color: whitesmoke;
+}
