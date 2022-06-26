@@ -1,22 +1,17 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+$retroColor: #EC68B5;
+
 *{
     margin: 0;
     padding: 0;
-}
-
-li{
-     list-style-type: none;
-}
-
-a{
     text-decoration: none;
-    color: inherit;
-}
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
 
-
-
-body{
-    font-family: 'Russo One', cursive;
-    
-    background-image:url("./assets/images/city.jpg");
-    color: whitesmoke;
 }

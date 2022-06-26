@@ -1,22 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { GamesManagementComponent } from './games-management.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('GamesManagementComponent', () => {
+  let component: GamesManagementComponent;
+  let fixture: ComponentFixture<GamesManagementComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      declarations: [ GamesManagementComponent ]
     })
     .compileComponents();
-
   });
 
   beforeEach(() => {
-    
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(GamesManagementComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
