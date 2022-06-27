@@ -1,8 +1,8 @@
-export interface GamesInterface{
+export interface GameInterface{
     title:"string",
-    developer:"string",
-    date:"string"
-    cover:string,
+    // developer:"string",
+    // date:"string"
+    img:"string",
     description:"string",
     genre:"string",
     platform:"string",

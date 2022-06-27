@@ -2,5 +2,13 @@
 	<p class="welcome">WELCOME TO THE 2022 EDITION OF</p>
 	<p class="award">THE GAME AWARDS!</p>
 
-	<div class="nominees"></div>
+	<div>
+		<figure *ngFor="let game of gameData">
+			<img src="{{ game.img }}" alt="{{ game.title }}" />
+			<h3>{{ game.title }}</h3>
+			<h4>{{ game.platform }}</h4>
+			<h4>{{ game.genre }}</h4>
+			<button (click)="catchGame(game)">Edit</button>
+		</figure>
+	</div>
 </section>

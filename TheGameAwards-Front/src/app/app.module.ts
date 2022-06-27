@@ -10,12 +10,13 @@ import { RequestGamesService } from './services/request-games.service';
 
 
 import { FooterComponent } from './core/footer/footer.component';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './pages/home/home.component';
+
 
 @NgModule({
   declarations: [
-
-    
-    
+    HomeComponent,
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -23,6 +24,7 @@ import { FooterComponent } from './core/footer/footer.component';
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
