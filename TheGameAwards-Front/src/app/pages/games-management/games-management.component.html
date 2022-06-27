@@ -1,7 +1,7 @@
 <section>
-  <h2>Gestión de los Games Awards</h2>
+  <h2>The Game Awards Management</h2>
 
-  <form novalidate>
+  <form novalidate [formGroup]="gamesForm">
     <label for="title">Title</label>
     <input type="text" id="title" formControlName="title" />
     <label for="description">Description</label>
@@ -9,41 +9,92 @@
     <label for="genre">Genre</label>
     <input type="text" id="genre" formControlName="genre" />
     <label for="image">Image</label>
-    <input type="text" id="image" formControlName="image" />
+    <input type="text" id="image" formControlName="img" />
     <h3>Platform</h3>
     <div class="platform">
       <div>
-        <input type="checkbox" id="platform" name="PS4" value="PS4" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="PS4"
+          value="PS4"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="PS4">PS4</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="PS5" value="PS5" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="PS5"
+          value="PS5"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="PS5">PS5</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="PC" value="PC" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="PC"
+          value="PC"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="PC">PC</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="SWITCH" value="SWITCH" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="SWITCH"
+          value="SWITCH"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="SWITCH">SWITCH</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="XBOX X" value="XBOX X" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="XBOX X"
+          value="XBOX X"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="XBOX X">XBOX X</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="XBOX S" value="XBOX S" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="XBOX S"
+          value="XBOX S"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="XBOX S">XBOX S</label>
       </div>
       <div>
-        <input type="checkbox" id="platform" name="XBOX ONE" value="XBOX ONE" />
+        <input
+          type="checkbox"
+          id="platform"
+          name="XBOX ONE"
+          value="XBOX ONE"
+          formArrayName="platform"
+          (change)="onCheckboxChange($event)"
+        />
         <label for="XBOX ONE">XBOX ONE</label>
       </div>
     </div>
     <div class="buttons">
-      <button type="submit">Enviar</button>
-      <button type="button">Delete</button>
+      <button type="submit" (click)="onSubmit()">Submit</button>
+      <button type="button" *ngIf="gameID !== ''" (click)="onDelete()">
+        Delete
+      </button>
     </div>
   </form>
 </section>
