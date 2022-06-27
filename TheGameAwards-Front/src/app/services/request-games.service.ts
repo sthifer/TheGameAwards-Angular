@@ -49,7 +49,7 @@ export class RequestGamesService {
   }
 
   public editGame(gameId:any, editedGame:any){
-    this.httpClient.put("http://localhost:3000/games/"+gameId, editedGame);
+    return this.httpClient.put("http://localhost:3000/games/"+gameId, editedGame);
   }
 
 }

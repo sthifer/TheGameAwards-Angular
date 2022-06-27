@@ -7,6 +7,8 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { GamesManagementComponent } from './pages/games-management/games-management.component';
 import { RequestGamesService } from './services/request-games.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RequestGamesService } from './services/request-games.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [RequestGamesService],
   bootstrap: [AppComponent]
