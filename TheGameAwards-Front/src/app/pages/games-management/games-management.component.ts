@@ -1,4 +1,4 @@
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import Swal from 'sweetalert2'
 import { FormGroup, FormBuilder,Validators,FormArray,FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -22,7 +22,6 @@ export class GamesManagementComponent implements OnInit {
     this.requestGames.clearGame();
 
     this.gamesForm = this.formBuilder.group({
-      //falta rellenar los campos de plataformas
       title: [this.newGame.title, [Validators.required]],
       description: [this.newGame.description, [Validators.required]],
       genre: [this.newGame.genre, [Validators.required]],
@@ -32,28 +31,43 @@ export class GamesManagementComponent implements OnInit {
 
     this.gamesForm.valueChanges.subscribe((data) =>{
       this.newGame = data;
-      // if(data.ps4){
-      //   this.newGame.platform.push(data.ps4.value);
-      // }
     })
     
   }
 
   public onSubmit() {
     //console.log(this.newGame)
+    if (!this.gamesForm.valid){
+      Swal.fire('The form is not correct.\n Please check it.');
+      return
+    }
+
+    let message:string ="";
     if( this.gameID=== ""){
       this.newGame.deletedid="1";
       this.newGame.votes="0";
       console.log(this.newGame)
       this.requestGames.postGame(this.newGame).subscribe();
+      message="Game created";
     }else{
       //console.log(this.newGame)
       this.requestGames.editGame(this.gameID,this.newGame).subscribe();
+      message="Game edited";
     }
     //SweetAlert
-    this.requestGames.clearGame()
+    
 
-    //this.router.navigate(["/"]);
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: message,
+      showConfirmButton: false,
+      timer: 1500
+    })
+
+    this.requestGames.clearGame();
+
+    this.router.navigate(["/"]);
   }
 
   public onDelete(){
@@ -62,6 +76,13 @@ export class GamesManagementComponent implements OnInit {
       this.requestGames.deleteGame(this.gameID).subscribe();
       this.requestGames.clearGame();
       //SweetAlert de borrado
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Game deleted',
+        showConfirmButton: false,
+        timer: 1500
+      })
     } 
 
     this.router.navigate(["/"])

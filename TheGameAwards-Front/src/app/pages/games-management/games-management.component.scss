@@ -8,8 +8,15 @@ form{
     flex-direction: column;
     width: auto;
     gap: 10px;
-    border: 2px solid grey;
     padding: 20px;
+}
+
+h2{
+    font-family: 'Monoton';
+    color: #EC68B5;
+    text-shadow: 0 0 1px #fff, 0 0 42px #ec68b5, 0 0 40px #ec68b5;
+    text-align: center;
+    text-decoration: underline;
 }
 
 form > input{
@@ -19,7 +26,7 @@ form > input{
     min-height: 20px;
     border: unset;
     border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
+    outline-color: #EC68B5;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -31,7 +38,7 @@ form > input{
 }
 
 button {
-    background-color: rgb(84, 105, 212);
+    background-color: #EC68B5;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -68,6 +75,10 @@ form > label{
 .buttons{
     display: flex;
     justify-content: space-around;
+}
+
+.formulario{
+    padding: 2rem;
 }
 
 @media only screen and (min-width: 1000px) {
