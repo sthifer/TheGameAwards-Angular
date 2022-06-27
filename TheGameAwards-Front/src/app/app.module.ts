@@ -7,13 +7,15 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { GamesManagementComponent } from './pages/games-management/games-management.component';
 import { RequestGamesService } from './services/request-games.service';
+import { PodiumComponent } from './pages/podium/podium.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    GamesManagementComponent
+    GamesManagementComponent,
+    PodiumComponent
   ],
   imports: [
     BrowserModule,
