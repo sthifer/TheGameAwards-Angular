@@ -1,35 +1,52 @@
 {
-    "games":
-    [
-        {
-            "title" : "Elden Ring",
-            "description" : "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El videojuego surge de una colaboración entre el director y diseñador Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin",
-            "genre" : "rol",
-            "votes" : 0,
-            "platform" : ["PS4","XBOX X","XBOX S","PS5","XBOX ONE","PC"],
-            "img" : "https://i0.wp.com/theartofgaming.es/wp-content/uploads/2021/06/Elden-Ring.png?fit=843%2C474&ssl=1",
-            "deletedid" : 1,
-            "id" : 1
-        },
-        {
-            "title" : "Dying Light 2",
-            "description" : "Dying Light 2 Stay Human es un videojuego de acción-aventura en primera persona, desarrollado y publicado por Techland.",
-            "genre" : "accion",
-            "votes" : 0,
-            "platform" : ["PS4","XBOX X","XBOX S","PS5","XBOX ONE","PC","SWITCH"],
-            "img" : "https://image.api.playstation.com/vulcan/img/rnd/202106/2908/7aJhOMuJALdBPqZHVy3CgJsg.png",
-            "deletedid" : 1,
-            "id" : 2
-        },
-        {
-            "title" : "Horizon Forbidden West",
-            "description" : "Horizon Forbidden West es un videojuego de rol de acción, aventura y mundo abierto desarrollado por Guerrilla Games y distribuido por Sony Interactive Entertainment, exclusivamente para PlayStation 4 y PlayStation 5. Es la secuela de Horizon Zero Dawn.",
-            "genre" : "accion",
-            "votes" : 0,
-            "platform" : ["PS4","PS5"],
-            "img" : "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/PXgLoiNPlkyAx90NKhFnu7wI.png",
-            "deletedid" : 1,
-            "id" : 3
-            }
-    ]
+  "games": [
+    {
+      "title": "Elden Ring",
+      "description": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El videojuego surge de una colaboración entre el director y diseñador Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin",
+      "genre": "rol",
+      "votes": 0,
+      "platform": [
+        "PS4",
+        "XBOX X",
+        "XBOX S",
+        "PS5",
+        "XBOX ONE",
+        "PC"
+      ],
+      "img": "https://i0.wp.com/theartofgaming.es/wp-content/uploads/2021/06/Elden-Ring.png?fit=843%2C474&ssl=1",
+      "deletedid": 1,
+      "id": 1
+    },
+    {
+      "title": "Dying Light 2",
+      "description": "Dying Light 2 Stay Human es un videojuego de acción-aventura en primera persona, desarrollado y publicado por Techland.",
+      "genre": "accion",
+      "votes": 0,
+      "platform": [
+        "PS4",
+        "XBOX X",
+        "XBOX S",
+        "PS5",
+        "XBOX ONE",
+        "PC",
+        "SWITCH"
+      ],
+      "img": "https://image.api.playstation.com/vulcan/img/rnd/202106/2908/7aJhOMuJALdBPqZHVy3CgJsg.png",
+      "deletedid": 1,
+      "id": 2
+    },
+    {
+      "title": "Horizon Forbidden West",
+      "description": "Horizon Forbidden West es un videojuego de rol de acción, aventura y mundo abierto desarrollado por Guerrilla Games y distribuido por Sony Interactive Entertainment, exclusivamente para PlayStation 4 y PlayStation 5. Es la secuela de Horizon Zero Dawn.",
+      "genre": "accion",
+      "votes": 0,
+      "platform": [
+        "PS4",
+        "PS5"
+      ],
+      "img": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/PXgLoiNPlkyAx90NKhFnu7wI.png",
+      "deletedid": 1,
+      "id": 3
+    }
+  ]
 }
