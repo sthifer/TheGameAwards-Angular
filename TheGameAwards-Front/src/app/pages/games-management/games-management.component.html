@@ -42,8 +42,10 @@
       </div>
     </div>
     <div class="buttons">
-      <button type="submit">Enviar</button>
-      <button type="button">Delete</button>
+      <button type="submit" (click)="onSubmit()">Submit</button>
+      <button type="button" *ngIf="gameID !== ''" (click)="onDelete()">
+        Delete
+      </button>
     </div>
   </form>
 </section>
