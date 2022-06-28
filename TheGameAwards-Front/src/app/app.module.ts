@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { GamesManagementComponent } from './pages/games-management/games-management.component';
 import { RequestGamesService } from './services/request-games.service';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -16,14 +17,17 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 
 
+import { PodiumComponent } from './pages/podium/podium.component';
+
+
 @NgModule({
   declarations: [
     HomeComponent,
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    GamesManagementComponent
-
+    GamesManagementComponent,
+    PodiumComponent
   ],
   imports: [
     CommonModule,
