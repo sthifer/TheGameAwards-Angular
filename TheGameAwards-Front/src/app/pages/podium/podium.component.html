@@ -1,6 +1,5 @@
 <section class="podium">
     <div class="podium__game" *ngFor="let game of bestThreeGames">
-        <h4>{{ game.title }}</h4>
         <img src="{{ game.img }}">
         <p>Votes: {{ game.votes }}</p>
     </div>

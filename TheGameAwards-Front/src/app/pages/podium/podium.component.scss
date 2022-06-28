@@ -11,7 +11,10 @@ img{
     margin-bottom: 50px;
 
     &__game{
+        text-align: center;
+    }
 
-        
+    &__game:nth-child(odd){
+        margin-top: 100px;
     }
 }
