@@ -1,4 +1,8 @@
+
 import Swal from 'sweetalert2'
+
+// import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 import { FormGroup, FormBuilder,Validators,FormArray,FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -15,6 +19,7 @@ export class GamesManagementComponent implements OnInit {
   public newGame = this.requestGames.gameData;
   public gameID = this.requestGames.gameData.id;
 
+  public plaformArray:any = {  };
 
   constructor(private requestGames:RequestGamesService,private formBuilder: FormBuilder, private router: Router) { }
 
@@ -32,6 +37,19 @@ export class GamesManagementComponent implements OnInit {
     this.gamesForm.valueChanges.subscribe((data) =>{
       this.newGame = data;
     })
+
+    
+    if (this.gameID !== ""){
+      
+      this.plaformArray.ps4 = this.newGame.platform.find(element => element=='PS4');
+      this.plaformArray.ps5 = this.newGame.platform.find(element => element=='PS5');
+      this.plaformArray.pc = this.newGame.platform.find(element => element=='PC');
+      this.plaformArray.switch = this.newGame.platform.find(element => element=='SWITCH');
+      this.plaformArray.xboxx = this.newGame.platform.find(element => element=='XBOX X');
+      this.plaformArray.xboxs = this.newGame.platform.find(element => element=='XBOX S');
+      this.plaformArray.xboxone = this.newGame.platform.find(element => element=='XBOX ONE');
+    }
+    
     
   }
 
@@ -46,7 +64,6 @@ export class GamesManagementComponent implements OnInit {
     if( this.gameID=== ""){
       this.newGame.deletedid="1";
       this.newGame.votes="0";
-      console.log(this.newGame)
       this.requestGames.postGame(this.newGame).subscribe();
       message="Game created";
     }else{
@@ -72,24 +89,38 @@ export class GamesManagementComponent implements OnInit {
 
   public onDelete(){
     //Cambiar confirm por SweetAlert
-    if (confirm("¿Estas seguro de borrar el juego?") == true) {
-      this.requestGames.deleteGame(this.gameID).subscribe();
-      this.requestGames.clearGame();
-      //SweetAlert de borrado
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Game deleted',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    } 
 
-    this.router.navigate(["/"])
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.requestGames.deleteGame(this.gameID).subscribe();
+        this.requestGames.clearGame();
+        //SweetAlert de borrado
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Game deleted',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        this.router.navigate(["/"])
+      }
+    })
+
+    
 
   }
 
   public onCheckboxChange(event: any) {
+    console.log(event);
+    
     const platform = (this.gamesForm.controls['platform'] as FormArray);
     if (event.target.checked) {
       platform.push(new FormControl(event.target.value));
