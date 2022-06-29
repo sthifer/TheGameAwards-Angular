@@ -1,6 +1,14 @@
 <section class="podium">
-    <div class="podium__game" *ngFor="let game of bestThreeGames">
-        <img src="{{ game.img }}">
-        <p>Votes: {{ game.votes }}</p>
+    <h2 >Top 3 GOTY:</h2>
+    <img class="crown" src="../.././../assets/img/crown.png" alt="">
+    <div #boThree class="podium__gotys">
+        
+        <div  class="podium__gotys--game" *ngFor="let game of bestThreeGames">
+            <img src="{{ game.img }}">
+            <div class="div__votes">
+                <p class="votes">{{ game.votes }} votes</p>
+            </div>
+        </div>
     </div>
+    
 </section>
