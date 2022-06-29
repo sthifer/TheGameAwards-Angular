@@ -81,7 +81,8 @@ section{
 .card__content{
     text-align: center;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bolder;
     padding: 15px;
     font-family: 'Russo One', sans-serif;
     color: #09f9cd;
@@ -209,6 +210,13 @@ section{
   }
 }
 
-
+// Swal.fire({
+//   title: 'Sweet!',
+//   text: 'Modal with a custom image.',
+//   imageUrl: 'https://unsplash.it/400/200',
+//   imageWidth: 400,
+//   imageHeight: 200,
+//   imageAlt: 'Custom image',
+// })
 
 
