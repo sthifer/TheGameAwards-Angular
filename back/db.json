@@ -47,6 +47,19 @@
       "img": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/PXgLoiNPlkyAx90NKhFnu7wI.png",
       "deletedid": 1,
       "id": 3
+    },
+    {
+      "title": "prueba",
+      "description": "prueba",
+      "genre": "PRUEBA",
+      "img": "PRUEBA",
+      "platform": [
+        "SWITCH",
+        "PS4"
+      ],
+      "deletedid": "1",
+      "votes": "0",
+      "id": 4
     }
   ]
 }
