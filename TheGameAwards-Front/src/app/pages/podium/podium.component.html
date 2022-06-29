@@ -1,0 +1,6 @@
+<section class="podium">
+    <div class="podium__game" *ngFor="let game of bestThreeGames">
+        <img src="{{ game.img }}">
+        <p>Votes: {{ game.votes }}</p>
+    </div>
+</section>

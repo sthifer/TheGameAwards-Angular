@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GamesManagementComponent } from './pages/games-management/games-management.component';
+import { PodiumComponent } from './pages/podium/podium.component';
 
 const routes: Routes = [
     
@@ -12,6 +13,9 @@ const routes: Routes = [
   },
 {
     path: "management", component: GamesManagementComponent,
+  },
+  {
+    path: "podium", component: PodiumComponent,
   }
    
 ];
