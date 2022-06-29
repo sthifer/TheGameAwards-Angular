@@ -18,21 +18,14 @@
       "id": 1
     },
     {
-      "title": "Dying Light 2",
+      "title": "Dying Light 2 4",
       "description": "Dying Light 2 Stay Human es un videojuego de acción-aventura en primera persona, desarrollado y publicado por Techland.",
       "genre": "accion",
-      "votes": 0,
+      "img": "https://image.api.playstation.com/vulcan/img/rnd/202106/2908/7aJhOMuJALdBPqZHVy3CgJsg.png",
       "platform": [
-        "PS4",
-        "XBOX X",
-        "XBOX S",
-        "PS5",
-        "XBOX ONE",
         "PC",
         "SWITCH"
       ],
-      "img": "https://image.api.playstation.com/vulcan/img/rnd/202106/2908/7aJhOMuJALdBPqZHVy3CgJsg.png",
-      "deletedid": 1,
       "id": 2
     },
     {
@@ -49,27 +42,17 @@
       "id": 3
     },
     {
-      "title": "df",
-      "description": "df",
-      "genre": "df",
-      "img": "df",
+      "title": "God of War",
+      "description": "patata pelada",
+      "genre": "patata",
+      "img": "https://img.menzig.tech/a/2000/2046-h0.jpg",
       "platform": [
         "PS5",
-        "XBOX X"
+        "XBOX S"
       ],
       "deletedid": "1",
       "votes": "0",
       "id": 4
-    },
-    {
-      "title": "",
-      "description": "",
-      "genre": "",
-      "votes": "0",
-      "platform": [],
-      "img": "",
-      "deletedid": "1",
-      "id": 5
     }
   ]
 }
