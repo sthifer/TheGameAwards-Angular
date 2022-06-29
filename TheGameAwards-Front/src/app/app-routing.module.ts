@@ -1,4 +1,4 @@
-import { GestionComponent } from './pages/gestion/gestion.component';
+
 import { HomeComponent } from './pages/home/home.component';
 
 import { NgModule, Component } from '@angular/core';
