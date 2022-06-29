@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 
 import { PodiumComponent } from './pages/podium/podium.component';
+import { AppPipesModule } from './app-pipes.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PodiumComponent } from './pages/podium/podium.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppPipesModule
   ],
   providers: [RequestGamesService],
   bootstrap: [AppComponent]

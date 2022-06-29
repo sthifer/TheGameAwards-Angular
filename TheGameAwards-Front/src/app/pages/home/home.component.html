@@ -2,8 +2,8 @@
 	<p class="welcome">WELCOME TO THE 2022 EDITION OF</p>
 	<p class="award">THE GAME AWARDS!</p>
 
-	<div>
-		<figure *ngFor="let game of gameData">
+	<div class="gamesSection">
+		<figure *ngFor="let game of gameData" class="game">
 			<img src="{{ game.img }}" alt="{{ game.title }}" />
 			<h3>{{ game.title }}</h3>
 			<h4>{{ game.platform }}</h4>
