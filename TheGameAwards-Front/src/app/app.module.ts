@@ -16,7 +16,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PodiumComponent } from './pages/podium/podium.component';
 import { AppPipesModule } from './app-pipes.module';
 
@@ -33,6 +33,7 @@ import { AppPipesModule } from './app-pipes.module';
   imports: [
     CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

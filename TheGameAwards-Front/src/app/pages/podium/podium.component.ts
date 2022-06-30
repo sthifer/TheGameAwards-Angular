@@ -29,7 +29,9 @@ export class PodiumComponent implements OnInit, AfterViewInit{
 
   public ngAfterViewInit(): void
   {
+    setTimeout(() => {
       party.confetti(this.game.nativeElement);
+    }, 600);
       
   }
 

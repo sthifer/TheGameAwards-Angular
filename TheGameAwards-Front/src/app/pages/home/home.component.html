@@ -2,7 +2,7 @@
 	<p class="welcome">WELCOME TO THE 2022 EDITION OF</p>
 	<p class="award">THE GAME AWARDS!</p>
 
-	<input class="input" [(ngModel)]="filter" type="text" placeholder="&#61442;"/>
+	<input class="input" [(ngModel)]="filter" type="text" placeholder="Search Game or Genre"/>
 	<div class="cards">
 		<div class="card" *ngFor="let game of (gameData | filterGames:filter)">
 			<img src="{{ game.img }}" alt="{{ game.title }}" />

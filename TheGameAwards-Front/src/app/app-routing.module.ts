@@ -9,13 +9,13 @@ import { PodiumComponent } from './pages/podium/podium.component';
 const routes: Routes = [
     
   {
-    path:"", pathMatch:"full", component: HomeComponent
+    path:"", pathMatch:"full", component: HomeComponent, data:{animation: 'isLeft'} 
   },
 {
-    path: "management", component: GamesManagementComponent,
+    path: "management", component: GamesManagementComponent, data:{animation: 'isRight'}
   },
   {
-    path: "podium", component: PodiumComponent,
+    path: "podium", component: PodiumComponent, data:{animation: 'isRigth'} 
   }
    
 ];
