@@ -9,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   public gameData: any [] = [];
-  constructor(private requestGamesService: RequestGamesService, private router: Router ) { }
+  public filter:string;
+  constructor(private requestGamesService: RequestGamesService, private router: Router ) {
+    this.filter = "";
+  }
 
   ngOnInit(): void {
     this.requestGamesService.getGames().subscribe((data:any)=>{

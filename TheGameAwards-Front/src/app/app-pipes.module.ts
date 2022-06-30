@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FilterGamesPipe } from './pipes/filter-games.pipe';
 
 
@@ -9,7 +8,10 @@ import { FilterGamesPipe } from './pipes/filter-games.pipe';
     FilterGamesPipe
   ],
   imports: [
-    CommonModule
+    
+  ],
+  exports:[
+    FilterGamesPipe
   ]
 })
 export class AppPipesModule { }

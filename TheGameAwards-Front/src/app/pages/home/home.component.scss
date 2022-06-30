@@ -4,9 +4,29 @@ section{
     background: url('../../../assets/images/city.jpg');
     height: 90vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+
+    .input{
+      font-family: FontAwesome;
+      width: 300px;
+      background: none;
+      border: 0;
+      padding-bottom: 5px;
+      // border-bottom: 2px solid #EC68B5;
+      font-weight: normal;
+      overflow: visible;
+      vertical-align: top;
+      display: inline-block !important;
+      padding-left: 5px;
+      padding-top: 2px;
+      color: hsl(9, 40%, 60%);
+      transition: 0.3s all;
+      border-bottom: 2px solid #EC68B5;
+  }
     
 }
 
@@ -128,6 +148,7 @@ section{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  cursor: pointer;
 }
 
 .button-49:after {
