@@ -7,12 +7,12 @@
 		<div class="card" *ngFor="let game of (gameData | filterGames:filter)">
 			<img src="{{ game.img }}" alt="{{ game.title }}" />
 			<div class="card__content">
-				<h3>{{ game.title }}</h3>
+				<h3 class="title">{{ game.title }}</h3>
 				<h4>{{ game.platform }}</h4>
-				<h4>{{ game.genre }}</h4>
+				<h4 class="genre">{{ game.genre }}</h4>
 			</div>
 			<div class="card__buttons">
-				<button class="button-49" (click)="catchGame(game)">VOTE!</button>
+				<button class="button-49" (click)="popConfirm()">VOTE!</button>
 				<button class="button-49" (click)="catchGame(game)">EDIT</button>
 			</div>
 		</div>
