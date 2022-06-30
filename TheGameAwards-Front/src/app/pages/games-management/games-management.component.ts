@@ -73,7 +73,7 @@ export class GamesManagementComponent implements OnInit {
     }
     //SweetAlert
     
-
+    
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -81,10 +81,13 @@ export class GamesManagementComponent implements OnInit {
       showConfirmButton: false,
       timer: 1500
     })
-
+    
+    
     this.requestGames.clearGame();
-
+    
+    setTimeout(() => {
     this.router.navigate(["/"]);
+  }, 600);
   }
 
   public onDelete(){
@@ -103,14 +106,19 @@ export class GamesManagementComponent implements OnInit {
         this.requestGames.deleteGame(this.gameID).subscribe();
         this.requestGames.clearGame();
         //SweetAlert de borrado
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'Game deleted',
-          showConfirmButton: false,
-          timer: 1500
-        })
-        this.router.navigate(["/"])
+          
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Game deleted',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        
+        setTimeout(() => {
+            this.router.navigate(["/"])
+          }
+        , 600);
       }
     })
 

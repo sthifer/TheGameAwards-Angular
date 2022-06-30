@@ -28,13 +28,12 @@ export class HomeComponent implements OnInit {
         confirmButtonColor: '#fe00ae',
         background: 'rgba(0,230,245,.8)',
     });
-
-    console.log(game.title);
-    console.log(game.votes);
     
-    
-    game.votes++;
-    console.log(game.votes);
+    if (game.votes===null){
+      game.votes=1;
+    }else{
+      game.votes++;
+    }
     
     this.requestGamesService.editGame(game.id, game).subscribe();
   }
@@ -43,7 +42,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.requestGamesService.getGames().subscribe((data:any)=>{
-      console.log(data)
       this.gameData = data
     })
   }

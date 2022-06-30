@@ -8,14 +8,14 @@
 }
 section{
     background: url('../../../assets/images/city.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
 
-
+  .search{
+    margin: auto;
+    width: 300px;
+  }
     .input{
       width: 300px;
       background: none;
@@ -38,6 +38,21 @@ section{
       }
   }
     padding-bottom: 40px;
+
+    .platform{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      li{
+        background: linear-gradient(45deg, transparent 5%, #fe00ae 5%);
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+    }
     
 }
 
@@ -45,7 +60,7 @@ section{
   padding-top: 10px ;
     text-align: center;
     font-family: 'Russo One';
-    font-size: 70px;
+    font-size: 3rem;
     font-smooth: auto;
     text-shadow: 0 1px 0#000000,
                  0 2px 0 #070004,
@@ -64,7 +79,7 @@ section{
 .award{
     text-align: center;
     font-family: 'Russo One';
-    font-size: 90px;
+    font-size: 4rem;
     font-smooth: auto;
     text-shadow: 0 1px 0#000000,
                  0 2px 0 #070004,
@@ -83,6 +98,7 @@ section{
 
 .cards{
     margin-top: 100px;
+    padding: 10px;
     width:100%;
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +110,7 @@ section{
 
 
 .card{
-    width: 500px;
+    width: 400px;
     border: 0.5rem solid #fff;
     border-radius:10px;
     box-shadow: 0 0 .2rem #fff,
@@ -109,7 +125,7 @@ section{
 
     img{
     width: 100%;
-    height: 15vw;
+    height: 400px;
     display: block;
       
 }
@@ -137,7 +153,7 @@ section{
 }
 .genre{
     text-transform: capitalize;
-    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
