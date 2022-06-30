@@ -51,17 +51,65 @@
       "id": 3
     },
     {
-      "title": "prueba",
+      "title": "Sniper Elite 5",
       "description": "prueba",
-      "genre": "PRUEBA",
-      "img": "PRUEBA",
+      "genre": "Stealth Shooter",
+      "img": "https://www.mobygames.com/images/covers/l/814773-sniper-elite-5-france-windows-apps-front-cover.jpg",
       "platform": [
-        "SWITCH",
-        "PS4"
+        "PS4",
+        "XBOX ONE",
+        "PS5",
+        "XBOX X",
+        "PC",
+        "XBOX S"
+      ],
+      "id": 4
+    },
+    {
+      "title": "THE STANLEY PARABLE: ULTRA DELUXE",
+      "description": "----",
+      "genre": "First Person Puzzle",
+      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3369bc1d-d48c-4a8c-ac24-4e213dc92dae/df4tsw9-24e4f8bc-9bf2-4f77-944f-10e0fc537b83.png/v1/fill/w_1280,h_1616,q_80,strp/stanley_parable_ultra_deluxe_dvd_cover_art_by_drasshat_df4tsw9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYxNiIsInBhdGgiOiJcL2ZcLzMzNjliYzFkLWQ0OGMtNGE4Yy1hYzI0LTRlMjEzZGM5MmRhZVwvZGY0dHN3OS0yNGU0ZjhiYy05YmYyLTRmNzctOTQ0Zi0xMGUwZmM1MzdiODMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xDzDaVO9o5HwehGkmdhupyQOzSZqervuwkMe4dfn9Kg",
+      "platform": [
+        "PC",
+        "PS4",
+        "PS5",
+        "XBOX X",
+        "XBOX S",
+        "XBOX ONE",
+        "SWITCH"
       ],
       "deletedid": "1",
       "votes": "0",
-      "id": 4
+      "id": 5
+    },
+    {
+      "title": "WARHAMMER 40K: CHAOS GATE ",
+      "description": "---",
+      "genre": "Tactical Strategy",
+      "img": "https://cdn1.epicgames.com/offer/ab7e605d8d734d3ab48a243c51ca5b8e/EGS_Warhammer40000ChaosGateDaemonhunters_ComplexGames_S2_1200x1600-92235e9e6975ff9b15607026f3a87e0f",
+      "platform": [
+        "PC"
+      ],
+      "id": 6
+    },
+    {
+      "title": "POKÉMON LEGENDS: ARCEUS",
+      "description": "--",
+      "genre": "JRPG",
+      "img": "https://assets-prd.ignimgs.com/2021/11/04/pokmon-legends-arceus-button-fomn-1636006738698.jpg",
+      "platform": [
+        "SWITCH"
+      ],
+      "id": 7
+    },
+    {
+      "title": "GHOSTWIRE: TOKYO",
+      "description": "--",
+      "genre": "FPS Adventure",
+      "img": "https://cdn1.epicgames.com/offer/a93cd6111251461c953776a0c4ea4d80/EGS_GhostwireTokyoDeluxeEditionTall_1200x1600-e0e18c7cd20eaee75163c69e61a5ec30",
+      "platform": [],
+      "id": 8
     }
   ]
 
