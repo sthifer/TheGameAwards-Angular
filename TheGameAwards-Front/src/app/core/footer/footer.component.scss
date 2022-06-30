@@ -6,22 +6,19 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 30vh;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(177,3,165,1) 100%, rgba(0,212,255,1) 100%);
-    
     .footercontent {
         display: flex;
         flex-direction: column;
         color: white;
-
         &__social{
             font-size: 2rem;
             display: flex;
             justify-content: space-between;
             border-bottom: 2px solid $retroColor;
             padding-bottom: 20px;
-
+            margin-top: 30px;
             a{
                 color: white
             }
@@ -45,6 +42,7 @@ footer{
 
         &__copyright{
             margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }

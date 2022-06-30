@@ -9,9 +9,34 @@
 section{
     background: url('../../../assets/images/city.jpg');
     width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+
+
+    .input{
+      width: 300px;
+      background: none;
+      border: 0;
+      padding-bottom: 5px;
+      
+      // border-bottom: 2px solid #EC68B5;
+      font-weight: normal;
+      overflow: visible;
+      vertical-align: top;
+      display: inline-block !important;
+      padding-left: 5px;
+      padding-top: 2px;
+      color: white;
+      transition: 0.3s all;
+      border-bottom: 2px solid #EC68B5;
+
+      &::placeholder{
+        color: white;
+      }
+  }
     padding-bottom: 40px;
     
 }
@@ -66,6 +91,7 @@ section{
     gap: 100px;
     
 }
+
 
 .card{
     width: 500px;
@@ -165,6 +191,7 @@ section{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  cursor: pointer;
 }
 
 .button-49:after {
@@ -175,7 +202,7 @@ section{
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'ALTERNATE TEXT';
+  content: attr(data-text);
   display: block;
   position: absolute;
   top: 0;

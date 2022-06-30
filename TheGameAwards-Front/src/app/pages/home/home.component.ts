@@ -10,21 +10,35 @@ import Swal from 'sweetalert2';
 })
 export class HomeComponent implements OnInit {
   public gameData: any [] = [];
-  constructor(private requestGamesService: RequestGamesService, private router: Router ) { }
+  public filter:string;
+
+  constructor(private requestGamesService: RequestGamesService, private router: Router ) {
+    this.filter = "";
+   }
   
-  popConfirm() {
+  popConfirm(game:any) {
     Swal.fire({
-    title: "<h3 style='color:black'>"+ 'Perfection!'+ "</h3>",
-    padding: '3em',
-    text: 'Thank you for voting, Pacha approves!',
-    imageUrl: 'https://i.kym-cdn.com/entries/icons/facebook/000/019/698/8RKAP94.jpg',
-    imageWidth: 400,
-    imageHeight: 200,
-    imageAlt: 'Custom image',
-    confirmButtonColor: '#fe00ae',
-    background: 'rgba(0,230,245,.8)',
-  })
+        title: "<h3 style='color:black'>"+ 'Perfection!'+ "</h3>",
+        padding: '3em',
+        text: 'Thank you for voting, Pacha approves!',
+        imageUrl: 'https://i.kym-cdn.com/entries/icons/facebook/000/019/698/8RKAP94.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        confirmButtonColor: '#fe00ae',
+        background: 'rgba(0,230,245,.8)',
+    });
+
+    console.log(game.title);
+    console.log(game.votes);
+    
+    
+    game.votes++;
+    console.log(game.votes);
+    
+    this.requestGamesService.editGame(game.id, game).subscribe();
   }
+
 
 
   ngOnInit(): void {
