@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Rajdhani:wght@500&family=Russo+One&display=swap');
 
+@media screen and (min-width: 780px) {
+  .full-width-img {
+  margin: auto;
+  width: 90%;
+  }
+}
 section{
     background: url('../../../assets/images/city.jpg');
-    // height: ;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -59,10 +64,11 @@ section{
     flex-direction: row;
     justify-content: center;
     gap: 100px;
+    
 }
 
 .card{
-    width: 400px;
+    width: 500px;
     border: 0.5rem solid #fff;
     border-radius:10px;
     box-shadow: 0 0 .2rem #fff,
@@ -81,18 +87,46 @@ section{
     display: block;
       
 }
+
+
+.title{
+  font-size: 33px;
+  color: #ff2ebd;
+  margin-bottom: 40px;
+  text-shadow: 0 1px 0#000000,
+               0 2px 0 #02f2c6,
+               0 4px 0 #00ffd0,
+               0 5px 0 #09f9cd,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15),
+               0 3px 0 #fe00ae;
+  color: #ff26ba
+  
+
+}
+.genre{
+    text-transform: capitalize;
+    margin-top: 30px;
+
+}
+
 .card__content{
-  height: 300px;
+    height: 300px;
     text-align: center;
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
     padding: 15px;
     font-family: 'Russo One', sans-serif;
     color: #09f9cd;
     text-shadow: 0 1px 0#000000,
                  0 2px 0 #070004,
-                 0 4px 0 #fe00ae,
+                 0 4px 0 #fb10b1,
                  0 5px 0 #2f031c,
                  0 6px 1px rgba(0,0,0,.1),
                  0 0 5px rgba(0,0,0,.1),
