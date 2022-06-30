@@ -28,7 +28,7 @@ export class GamesManagementComponent implements OnInit {
 
     this.gamesForm = this.formBuilder.group({
       title: [this.newGame.title, [Validators.required]],
-      description: [this.newGame.description, [Validators.required]],
+      description: [this.newGame.description, []],
       genre: [this.newGame.genre, [Validators.required]],
       img: [this.newGame.img, [Validators.required]],
       platform:  new FormArray([])
