@@ -5,12 +5,14 @@ $retroColor : #EC68B5;
     background: url("../../../assets/images/city.jpg");
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .crown{
         width: 10%;
         position: relative;
-        transform: translateX(855px) translateY(30px);
-
+        transform: translateY(30px);
     }
 
     h2{
@@ -41,11 +43,21 @@ $retroColor : #EC68B5;
                 position: relative;
                 transform: translateY(-40px);
                 .votes{
-                    background-color: #2bd1fc;
-                    border-radius: 4px;
-                    color: white;
-                    font-weight: bolder;
-                    font-size: 1.5rem;
+                    line-height: 78px;
+                    font-size: 20px;
+                    font-family: 'Bebas Neue', sans-serif;
+                    background: linear-gradient(45deg, transparent 5%, #fe00ae 5%);
+                    border: 0;
+                    color: #fff;
+                    letter-spacing: 3px;
+                    box-shadow: 6px 0px 0px #00E6F6;
+                    outline: transparent;
+                    position: relative;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+
+                    
                 }
             }
             
@@ -58,9 +70,9 @@ $retroColor : #EC68B5;
 
     }
 
-    
-
     // &__game:nth-child(odd){
     //     margin-top: 100px;
     // }
 }
+
+

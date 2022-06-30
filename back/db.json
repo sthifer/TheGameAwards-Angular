@@ -1,12 +1,10 @@
 {
-  
-  "games": 
-  [
+  "games": [
     {
       "title": "Elden Ring",
       "description": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El videojuego surge de una colaboración entre el director y diseñador Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin",
       "genre": "rol",
-      "votes": 0,
+      "votes": 2,
       "platform": [
         "PS4",
         "XBOX X",
@@ -64,5 +62,4 @@
       "id": 4
     }
   ]
-
 }

@@ -10,6 +10,7 @@ import party from "party-js";
 export class PodiumComponent implements OnInit, AfterViewInit{
 
   bestThreeGames:any[] = [];
+  public first3:any[] = [];
   @ViewChild('boThree') game!:ElementRef;
   
 
@@ -18,8 +19,10 @@ export class PodiumComponent implements OnInit, AfterViewInit{
   ngOnInit(): void {
     this.requestGames.getGames().subscribe((sortedGames:any) => {
         this.bestThreeGames = sortedGames.sort(this.compare);
-        this.bestThreeGames.slice(0,3);
-        [this.bestThreeGames[0], this.bestThreeGames[1]] = [this.bestThreeGames[1], this.bestThreeGames[0]];   
+        this.first3 = this.bestThreeGames.slice(0,3);
+        
+        [this.first3[0], this.first3[1]] = [this.first3[1], this.first3[0]];   
+        
     });   
     
   }
