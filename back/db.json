@@ -4,7 +4,7 @@
       "title": "Elden Ring",
       "description": "Elden Ring es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El videojuego surge de una colaboración entre el director y diseñador Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin",
       "genre": "rol",
-      "votes": 4,
+      "votes": 6,
       "platform": [
         "PS4",
         "XBOX X",
@@ -21,7 +21,7 @@
       "title": "Dying Light 2",
       "description": "Dying Light 2 Stay Human es un videojuego de acción-aventura en primera persona, desarrollado y publicado por Techland.",
       "genre": "accion",
-      "votes": 1,
+      "votes": 4,
       "platform": [
         "PS4",
         "XBOX X",
@@ -39,7 +39,7 @@
       "title": "Horizon Forbidden West",
       "description": "Horizon Forbidden West es un videojuego de rol de acción, aventura y mundo abierto desarrollado por Guerrilla Games y distribuido por Sony Interactive Entertainment, exclusivamente para PlayStation 4 y PlayStation 5. Es la secuela de Horizon Zero Dawn.",
       "genre": "accion",
-      "votes": 3,
+      "votes": 4,
       "platform": [
         "PS4",
         "PS5"
