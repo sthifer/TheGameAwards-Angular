@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "json-serve": "^0.1.0",
     "json-server": "^0.17.0"
   }
 }
